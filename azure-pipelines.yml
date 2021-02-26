@@ -20,5 +20,7 @@ steps:
 
 - bash: |
     echo Update GitHub repo
+    git add .
+    git commit -m 'fetching latest changes from azure devops repo'
     git push https://chaltinpagan:$(GithubPAT)@github.com/ChaltinPagan/RazorPagesADO.git main
   displayName: 'Updating GitHub repo'
