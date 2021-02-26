@@ -20,6 +20,8 @@ steps:
 
 - bash: |
     echo Update GitHub repo
+    git config user.email "chaltinpagan@gmail.com"
+    git config user.name "Chaltin Pagan"
     git add .
     git commit -m 'fetching latest changes from azure devops repo'
     git push https://chaltinpagan:$(GithubPAT)@github.com/ChaltinPagan/RazorPagesADO.git main
