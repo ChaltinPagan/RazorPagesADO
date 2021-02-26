@@ -20,5 +20,5 @@ steps:
 
 - bash: |
     echo Update GitHub repo
-    git push https://chaltinpagan:$(GithubPAT)@github.com/ChaltinPagan/RazorPagesADO.git head:refs/heads/main
+    git push https://chaltinpagan:$(GithubPAT)@github.com/ChaltinPagan/RazorPagesADO.git main
   displayName: 'Updating GitHub repo'
