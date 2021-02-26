@@ -18,7 +18,7 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- script: |
+- bash: |
     echo Update GitHub repo
     git push https://chaltinpagan:$(GithubPAT)@github.com/ChaltinPagan/RazorPagesADO.git head:refs/heads/main
   displayName: 'Updating GitHub repo'
